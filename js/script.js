@@ -7,10 +7,12 @@ function loadData() {
     var $nytElem = $('#nytimes-articles');
     var $greeting = $('#greeting');
 
+    
     // clear out old data before new request
     $wikiElem.text("");
     $nytElem.text("");
 
+    
     // load streetview
     var streetStr = $('#street').val();
     var cityStr = $('#city').val();
@@ -22,6 +24,7 @@ function loadData() {
 
     $body.append('<img class="bgimg" src="' + streetviewUrl + '">');
 
+    
     // YOUR CODE GOES HERE!
 
     return false;
