@@ -71,18 +71,6 @@ function loadData() {
 
     });
 
-    $.ajax({
-        url: 'https://loudelement-free-natural-language-processing-service.p.mashape.com/nlp-url/', // The URL to the API. You can get this in the API page of the API you intend to consume
-        type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
-        data: {}, // Additional parameters here
-        datatype: 'json',
-        success: function(data) { console.dir((data.source)); },
-        error: function(err) { alert(err); },
-        beforeSend: function(xhr) {
-        xhr.setRequestHeader("X-Mashape-Authorization", "aKGeoEra0vmshsvGsVmNTB88D8I6p1JSgVVjsnF7LoRoNmxTiP"); // Enter here your Mashape key
-    }
-});    
-
     return false;
 };
 
